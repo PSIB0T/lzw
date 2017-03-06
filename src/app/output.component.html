@@ -1,0 +1,33 @@
+<div class="tableSet">
+  <table class="encoded" cellspacing="0">
+    <caption>Codewords</caption>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Token</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let objectKey of outputCode['objectKeys']">
+        <td>{{objectKey[0]}}</td>
+        <td>{{objectKey[1]}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="dict" cellspacing="0">
+    <caption>Dictionary</caption>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Token</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let objectMapping of outputCode['objectMapping'] | keys">
+        <td>{{objectMapping.key}}</td>
+        <td>{{objectMapping.value}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

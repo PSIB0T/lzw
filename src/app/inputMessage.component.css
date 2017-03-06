@@ -1,0 +1,46 @@
+.formContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  }
+
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:18px;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+	border-radius:3px;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+
+table th, table td{
+  border-bottom: 1px solid #d8cece;
+  padding: 20px 50px;
+}
+
+table tr:last-of-type td{
+  border-bottom: none;
+}
+
+table tr{
+  margin: 0;
+  padding: 0;
+}
+
+table th {
+	border-bottom:1px solid #e0e0e0;
+	background: #2f2956;
+  color: white;
+}
+  .form-input{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .tableSet{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
